@@ -6,4 +6,6 @@ const getUserNames = users => {
    return users.map(user => user.name);
   };
   
+  console.group('Task-01');
   console.log(getUserNames(users));
+  console.groupEnd();

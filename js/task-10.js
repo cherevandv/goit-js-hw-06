@@ -3,8 +3,18 @@
 import users from "./users.js";
 
 const getSortedUniqueSkills = users => {
-    // твой код
+    let arraySkills = [];
+    users.forEach((user) => {
+        user.skills.forEach((item) =>{
+           if(!arraySkills.includes(item)){
+            arraySkills.push(item);
+           }; 
+        });
+        
+    });
+    return arraySkills.sort();
   };
   
+  console.group('Task-10');
   console.log(getSortedUniqueSkills(users));
-  // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+  console.groupEnd();

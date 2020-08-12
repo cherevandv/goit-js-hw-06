@@ -8,4 +8,6 @@ const getNamesSortedByFriendsCount = (users) => {
     .map((user) => user.name);
 };
 
+console.group('Task-09');
 console.log(getNamesSortedByFriendsCount(users));
+console.groupEnd();
