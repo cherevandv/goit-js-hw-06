@@ -2,9 +2,7 @@
 
 import users from "./users.js";
 
-const getUsersWithAge = (users, min, max) => {
-  return users.filter((user) => (user.age > min) && (user.age < max));
-};
+const getUsersWithAge = (users, min, max) => users.filter((user) => (user.age > min) && (user.age < max));
 
 
 console.group('Task-06');
